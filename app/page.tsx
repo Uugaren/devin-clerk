@@ -8,7 +8,14 @@ export default function Home() {
         {appConfig.emoji}
       </span>
       <h1 className="text-5xl font-bold tracking-tight">{appConfig.name}</h1>
+      <p className="max-w-xl text-2xl font-medium">
+        Find the events you care about, anywhere in the world.
+      </p>
       <p className="max-w-xl text-lg text-black/70">{appConfig.description}</p>
+      <p className="max-w-xl text-black/60">
+        Concerts, conferences, festivals, meetups, sports and more, all in one
+        place, matched to your interests.
+      </p>
       <Link
         href="/dashboard"
         className="rounded-full bg-accent px-6 py-3 font-medium text-white shadow-sm transition hover:opacity-90"
@@ -16,8 +23,7 @@ export default function Home() {
         Get early access →
       </Link>
       <p className="text-sm text-black/50">
-        This page is public. The early-access page should be for signed-in users
-        only.
+        Free to join. Sign up to see what&apos;s coming next.
       </p>
     </section>
   );
